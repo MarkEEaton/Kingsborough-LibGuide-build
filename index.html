@@ -2,8 +2,27 @@
 <html>
 <body>
 
-<div id="app"><menus-component></menus-component></div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<div id="app">
+    <div class="dropdown" id="hamburger-container">
+        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" aria-label="Hamburger Menu" id="hamburger">
+            <i class="fas fa-bars" style="font-size: 2em;"></i>
+        </button>
+        <ul class="dropdown-menu fade" aria-labelledby="hamburger" id="hamburger-ul">
+            <li>
+		<menus-component></menus-component>
+                <!--a v-for="item in hamburger" v-bind:key="item.id" class="searchmenu" v-bind:aria-label="item.description" v-bind:href="item.link" v-bind:target="item.target_blank">
+                    <menus-component v-bind:item="item"></menus-component>
+		    </a> -->
+            </li>
+        </ul>
+    </div><!-- end of hamburger container -->
+</div><!-- end of vue app -->
 
 <script type="text/javascript" src="./out.js"></script>
+
 </body>
 </html>
