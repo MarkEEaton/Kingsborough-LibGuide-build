@@ -26,7 +26,7 @@
                 <li>
                     <a v-for="(item, itemName) in materialType" :key="item.id" class="searchmenu" @click="displayedItem = itemName">
                         <div class="highlight-menu-item bigger-fancy-text">
-                            <strong>{{ itemName }}</strong>
+                            <strong>{{ item.fullName }}</strong>
                         </div>
                     </a>
                 </li>
@@ -50,6 +50,7 @@ export default {
       displayedItem: "Define Your Search",
       materialType: {
         Books: {
+          fullName: 'Books',
           baseUrl: 'https://cuny-kb.primo.exlibrisgroup.com/discovery/search',
           tab: 'Everything',
           searchScope: 'IZ_CI_AW',
@@ -57,40 +58,37 @@ export default {
           id: 1
         },
         Articles: {
+          fullName: 'Articles (Peer reviewed)',
           baseUrl: 'https://cuny-kb.primo.exlibrisgroup.com/discovery/search',
           tab: 'Everything',
           searchScope: 'IZ_CI_AW',
           input: '<input name="mfacet" value="rtype,include,articles,1" type="hidden" /><input name="facet" value="tlevel,include,peer_reviewed" type="hidden" class="deleteWithDropdownChange" />',
           id: 2
         },
-        Videos: {
-          baseUrl: 'https://cuny-kb.primo.exlibrisgroup.com/discovery/search',
-          tab: 'Everything',
-          searchScope: 'IZ_CI_AW',
-          input: '<input name="facet" value="rtype,include,videos" type="hidden" />',
-          id: 3
-        },
-        Journals: {
-          baseUrl: 'https://cuny-kb.primo.exlibrisgroup.com/discovery/jsearch',
-          tab: 'jsearch_slot',
-          searchScope: 'IZ_CI_AW',
-          input: '',
-          id: 4
-        },
-        Newspapers: {
-          baseUrl: 'https://cuny-kb.primo.exlibrisgroup.com/discovery/npsearch',
-          tab: 'Everything',
-          searchScope: 'IZ_CI_AW',
-          input: '',
-          id: 5
-        },
         Reserves: {
+          fullName: 'Course reserves',
           baseUrl: 'https://cuny-kb.primo.exlibrisgroup.com/discovery/search',
           tab: 'CourseReserves',
           searchScope: 'CourseReserves',
           input: '',
-          id: 6
-        }
+          id: 3
+        },
+        Newspapers: {
+          fullName: 'Newspapers and Magazines',
+          baseUrl: 'https://cuny-kb.primo.exlibrisgroup.com/discovery/npsearch',
+          tab: 'Everything',
+          searchScope: 'IZ_CI_AW',
+          input: '',
+          id: 4
+        },
+        Journals: {
+          fullName: 'Journals',
+          baseUrl: 'https://cuny-kb.primo.exlibrisgroup.com/discovery/jsearch',
+          tab: 'jsearch_slot',
+          searchScope: 'IZ_CI_AW',
+          input: '',
+          id: 5
+        },
       }
     }
   }
