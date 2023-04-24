@@ -20,11 +20,11 @@
     <div class="form-group" id="flex-search-form">
         <div class="dropdown input-group zero-margin" id="blue-border1">
             <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" aria-label="Define Your Search">
-                <span id="defineYourSearch">Define Your Search </span><span class="caret"></span>
+                <span id="defineYourSearch">{{ displayedItem }}&nbsp</span><span class="caret"></span>
             </button>
             <ul class="dropdown-menu fade dropdown-margin" aria-labelledby="dropdownMenu1">
                 <li>
-                    <a v-for="(item, itemName) in materialType" class="searchmenu" onclick="customizeSearch('Books')">
+                    <a v-for="(item, itemName) in materialType" :key="item.id" class="searchmenu" @click="displayedItem = itemName">
                         <div class="highlight-menu-item bigger-fancy-text">
                             <strong>{{ itemName }}</strong>
                         </div>
@@ -47,6 +47,7 @@
 export default {
   data() {
     return {
+      displayedItem: "Define Your Search",
       materialType: {
         Books: {
           baseUrl: 'https://cuny-kb.primo.exlibrisgroup.com/discovery/search',
