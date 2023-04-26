@@ -29,6 +29,11 @@
                             <strong>{{ item.fullName }}</strong>
                         </div>
                     </a>
+                    <a href="https://cuny-kb.primo.exlibrisgroup.com/discovery/search?vid=01CUNY_KB:CUNY_KB&lang=en&mode=advanced" class="searchmenu">
+                        <div class="highlight-menu-item bigger-fancy-text">
+                            <strong>Advanced Search</strong>
+                        </div>
+                    </a>
                 </li>
             </ul>
         </div>
