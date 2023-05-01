@@ -42,7 +42,7 @@
             <input class="form-control form-width inherit-height-from-flex" name="queryTemp" id="primoQueryTemp" type="search" value="" :placeholder="(( placeholderError == false ) ? 'Enter search term here' : 'Please make a selection')">
         </div>
         <div class="input-group zero-margin" id="blue-border3">
-			<input type="submit" class="btn btn-default form-control onesearchsubmit inherit-height-from-flex" value="Search" @click.stop.prevent="submitSearch"/>
+            <input type="submit" class="btn btn-default form-control onesearchsubmit inherit-height-from-flex" value="Search" @click.stop.prevent="submitSearch"/>
         </div>
     </div>
 </form>
@@ -51,16 +51,19 @@
 <script>
 export default {
   methods: {
-	submitSearch() {
-	  if ( this.displayedItem == "Define Your Search" ) {
-   	    this.placeholderError = true;
-	    $("#dropdownMenu1").trigger('click.bs.dropdown.data-api'); // open the dropdown
-	  }
-	}
+    submitSearch() {
+      if ( this.displayedItem == "Define Your Search" ) {
+        this.placeholderError = true;
+        $("#dropdownMenu1").trigger('click.bs.dropdown.data-api'); // open the dropdown
+      } else {
+        this.placeholderError = false;
+        document.getElementById("primoQuery").value = "any,contains," + document.getElementById("primoQueryTemp").value.replace(/[,]/g, " "); // original OLS widget
+      }
+    }
   },
   data() {
     return {
-	  placeholderError: false,
+      placeholderError: false,
       displayedItem: "Define Your Search",
       materialType: {
         Books: {
