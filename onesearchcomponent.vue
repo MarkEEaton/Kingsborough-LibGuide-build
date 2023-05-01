@@ -19,7 +19,7 @@
     </h1>
     <div class="form-group" id="flex-search-form">
         <div class="dropdown input-group zero-margin" id="blue-border1">
-            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" aria-label="Define Your Search">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" ref="oneSearchMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" aria-label="Define Your Search">
                 <span id="defineYourSearch">{{ displayedItem }}&nbsp</span><span class="caret"></span>
             </button>
             <ul class="dropdown-menu fade dropdown-margin" aria-labelledby="dropdownMenu1">
@@ -54,7 +54,7 @@ export default {
     submitSearch() {
       if ( this.displayedItem == "Define Your Search" ) {
         this.placeholderError = true;
-        $("#dropdownMenu1").trigger('click.bs.dropdown.data-api'); // open the dropdown
+        this.$refs.oneSearchMenu.click(); // open the dropdown
       } else {
         this.placeholderError = false;
         document.getElementById("primoQuery").value = "any,contains," + document.getElementById("primoQueryTemp").value.replace(/[,]/g, " "); // original OLS widget
