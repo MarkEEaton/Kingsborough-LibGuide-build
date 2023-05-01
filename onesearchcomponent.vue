@@ -100,5 +100,23 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+/* add flex so that blue box-shadows line up */
+#flex-search-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+}
+.inherit-height-from-flex { height: inherit; }
+
+/* shadow for the search bar */
+#blue-border1 {
+        box-shadow: 0 5px 0 #003466, 0 -5px 0 #003466, -5px -5px 0 #003466, -5px 5px 0 #003466;
+}
+#blue-border2 {
+        box-shadow: 0 -5px 0 #003466, 0 5px 0 #003466;
+}
+#blue-border3 {
+        box-shadow: 0 5px 0 #003466, 0 -5px 0 #003466, 5px -5px 0 #003466, 5px 5px 0 #003466;
+}
 </style>
