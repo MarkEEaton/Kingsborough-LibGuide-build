@@ -42,7 +42,7 @@
             <input class="form-control form-width inherit-height-from-flex" name="queryTemp" id="primoQueryTemp" type="search" value="" :placeholder="(( placeholderError == false ) ? 'Enter search term here' : 'Please make a selection')">
         </div>
         <div class="input-group zero-margin" id="blue-border3">
-				<input type="submit" class="btn btn-default form-control onesearchsubmit inherit-height-from-flex" value="Search" @click="placeholderError = true"/>
+			<input type="submit" class="btn btn-default form-control onesearchsubmit inherit-height-from-flex" value="Search" @click.prevent="submitSearch"/>
         </div>
     </div>
 </form>
@@ -50,6 +50,11 @@
 
 <script>
 export default {
+  methods: {
+	submitSearch() {
+	  this.placeholderError = true;
+	}
+  },
   data() {
     return {
 	  placeholderError: false,
