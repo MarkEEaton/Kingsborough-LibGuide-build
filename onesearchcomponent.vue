@@ -39,10 +39,10 @@
         </div>
         <label class="sr-only" for="primoQueryTemp">Search terms</label>
         <div class="input-group zero-margin form-width" id="blue-border2">
-            <input class="form-control form-width inherit-height-from-flex" name="queryTemp" id="primoQueryTemp" type="search" value="" placeholder="Enter search term here">
+            <input class="form-control form-width inherit-height-from-flex" name="queryTemp" id="primoQueryTemp" type="search" value="" :placeholder="(( placeholderError == false ) ? 'Enter search term here' : 'Please make a selection')">
         </div>
         <div class="input-group zero-margin" id="blue-border3">
-            <input type="submit" class="btn btn-default form-control onesearchsubmit inherit-height-from-flex" value="Search" onclick="return addPrimoQuery(event);" />
+				<input type="submit" class="btn btn-default form-control onesearchsubmit inherit-height-from-flex" value="Search" @click="placeholderError = true"/>
         </div>
     </div>
 </form>
@@ -52,6 +52,7 @@
 export default {
   data() {
     return {
+	  placeholderError: false,
       displayedItem: "Define Your Search",
       materialType: {
         Books: {
