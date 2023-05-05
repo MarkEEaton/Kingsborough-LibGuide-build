@@ -65,9 +65,9 @@ export default {
   },
   data() {
     return {
-      searchString: "",
-      placeholderError: false,
-      displayedItem: "Define Your Search",
+      searchString: "", // initialize an empty search string
+      placeholderError: false, // initialize with no error text in placeholder
+      displayedItem: "Define Your Search", // the text displayed a the top of the OneSearch dropdown
       materialType: {
         Books: {
           fullName: 'Books',
