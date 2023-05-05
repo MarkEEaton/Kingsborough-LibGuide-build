@@ -3,8 +3,8 @@
     <!-- default is "everything"  option suggested from OLS widget builder -->
     <div v-if="selectedItem.input" v-html="selectedItem.input"></div>
     <input name="vid" value="01CUNY_KB:CUNY_KB" type="hidden" />
-    <input name="tab" value="Everything" type="hidden" id="tabSetting" />
-    <input name="search_scope" value="IZ_CI_AW" type="hidden" id=SearchScopeSetting />
+    <input name="tab" :value="selectedItem.tab" type="hidden" id="tabSetting" />
+    <input name="search_scope" :value="selectedItem.searchScope" type="hidden" id=SearchScopeSetting />
     <input name="mode" value="basic" type="hidden" />
     <input name="highlight" value="true" type="hidden" />
     <input name="displayMode" value="full" type="hidden" />
