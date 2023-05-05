@@ -1,6 +1,7 @@
 <template>
 <form class="form-inline onesearch-jumbotron" name="searchPrimoForm1" ref="oneSearchForm" role="search" method="get" action="https://cuny-kb.primo.exlibrisgroup.com/discovery/search" onsubmit="addPrimoQuery();" enctype="application/x-www-form-urlencoded; charset=utf-8" id="formToAppendInputsTo">
     <!-- default is "everything"  option suggested from OLS widget builder -->
+    <div v-if="selectedItem.input" v-html="selectedItem.input"></div>
     <input name="vid" value="01CUNY_KB:CUNY_KB" type="hidden" />
     <input name="tab" value="Everything" type="hidden" id="tabSetting" />
     <input name="search_scope" value="IZ_CI_AW" type="hidden" id=SearchScopeSetting />
@@ -24,7 +25,7 @@
             </button>
             <ul class="dropdown-menu fade dropdown-margin" aria-labelledby="dropdownMenu1">
                 <li>
-                    <a v-for="(item, itemName) in materialType" :key="item.id" class="searchmenu" @click="displayedItem = itemName">
+                    <a v-for="(item, itemName) in materialType" :key="item.id" class="searchmenu" @click="selectDropdown(item, itemName)">
                         <div class="highlight-menu-item bigger-fancy-text">
                             <strong>{{ item.fullName }}</strong>
                         </div>
@@ -51,6 +52,10 @@
 <script>
 export default {
   methods: {
+    selectDropdown(item, itemName) {
+        this.displayedItem = itemName; // swap in current item at the top of the dropdown
+        this.selectedItem = item;
+    },
     submitSearch() {
       if ( this.displayedItem == "Define Your Search" ) {
         this.placeholderError = true;
@@ -65,6 +70,7 @@ export default {
   },
   data() {
     return {
+      selectedItem: {}, // initialize the data from the dropdown selection
       searchString: "", // initialize an empty search string
       placeholderError: false, // initialize with no error text in placeholder
       displayedItem: "Define Your Search", // the text displayed a the top of the OneSearch dropdown
