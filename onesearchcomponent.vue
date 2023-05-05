@@ -1,5 +1,5 @@
 <template>
-<form class="form-inline onesearch-jumbotron" name="searchPrimoForm1" role="search" method="get" action="https://cuny-kb.primo.exlibrisgroup.com/discovery/search" onsubmit="addPrimoQuery();" enctype="application/x-www-form-urlencoded; charset=utf-8" id="formToAppendInputsTo">
+<form class="form-inline onesearch-jumbotron" name="searchPrimoForm1" ref="oneSearchForm" role="search" method="get" action="https://cuny-kb.primo.exlibrisgroup.com/discovery/search" onsubmit="addPrimoQuery();" enctype="application/x-www-form-urlencoded; charset=utf-8" id="formToAppendInputsTo">
     <!-- default is "everything"  option suggested from OLS widget builder -->
     <input name="vid" value="01CUNY_KB:CUNY_KB" type="hidden" />
     <input name="tab" value="Everything" type="hidden" id="tabSetting" />
@@ -39,7 +39,7 @@
         </div>
         <label class="sr-only" for="primoQueryTemp">Search terms</label>
         <div class="input-group zero-margin form-width" id="blue-border2">
-            <input class="form-control form-width inherit-height-from-flex" name="queryTemp" id="primoQueryTemp" type="search" value="" :placeholder="(( placeholderError == false ) ? 'Enter search term here' : 'Please make a selection')">
+            <input class="form-control form-width inherit-height-from-flex" name="queryTemp" id="primoQueryTemp" type="search" v-model="searchString" :placeholder="(( placeholderError == false ) ? 'Enter search term here' : 'Please make a selection')" />
         </div>
         <div class="input-group zero-margin" id="blue-border3">
             <input type="submit" class="btn btn-default form-control onesearchsubmit inherit-height-from-flex" value="Search" @click.stop.prevent="submitSearch"/>
@@ -54,15 +54,18 @@ export default {
     submitSearch() {
       if ( this.displayedItem == "Define Your Search" ) {
         this.placeholderError = true;
+        this.searchString = ""; // remove the search string
         this.$refs.oneSearchMenu.click(); // open the dropdown
       } else {
         this.placeholderError = false;
         document.getElementById("primoQuery").value = "any,contains," + document.getElementById("primoQueryTemp").value.replace(/[,]/g, " "); // original OLS widget
+        this.$refs.oneSearchForm.submit(); //submit the form
       }
     }
   },
   data() {
     return {
+      searchString: "",
       placeholderError: false,
       displayedItem: "Define Your Search",
       materialType: {
