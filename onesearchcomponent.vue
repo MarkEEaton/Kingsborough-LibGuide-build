@@ -1,5 +1,5 @@
 <template>
-<form class="form-inline onesearch-jumbotron" name="searchPrimoForm1" ref="oneSearchForm" role="search" method="get" action="https://cuny-kb.primo.exlibrisgroup.com/discovery/search" onsubmit="addPrimoQuery();" enctype="application/x-www-form-urlencoded; charset=utf-8" id="formToAppendInputsTo">
+<form class="form-inline onesearch-jumbotron" name="searchPrimoForm1" ref="oneSearchForm" role="search" method="get" :action="selectedItem.baseUrl" onsubmit="addPrimoQuery();" enctype="application/x-www-form-urlencoded; charset=utf-8" id="formToAppendInputsTo">
     <!-- default is "everything"  option suggested from OLS widget builder -->
     <div v-if="selectedItem.input" v-html="selectedItem.input"></div>
     <input name="vid" value="01CUNY_KB:CUNY_KB" type="hidden" />
