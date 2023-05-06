@@ -1,10 +1,10 @@
 <template>
-<form class="form-inline onesearch-jumbotron" name="searchPrimoForm1" ref="oneSearchForm" role="search" method="get" :action="selectedItem.baseUrl" onsubmit="addPrimoQuery();" enctype="application/x-www-form-urlencoded; charset=utf-8" id="formToAppendInputsTo">
+<form class="form-inline onesearch-jumbotron" name="searchPrimoForm1" ref="oneSearchForm" role="search" method="get" :action="selectedItem.baseUrl" enctype="application/x-www-form-urlencoded; charset=utf-8">
     <!-- default is "everything"  option suggested from OLS widget builder -->
     <div v-if="selectedItem.input" v-html="selectedItem.input"></div>
     <input name="vid" value="01CUNY_KB:CUNY_KB" type="hidden" />
-    <input name="tab" :value="selectedItem.tab" type="hidden" id="tabSetting" />
-    <input name="search_scope" :value="selectedItem.searchScope" type="hidden" id=SearchScopeSetting />
+    <input name="tab" :value="selectedItem.tab" type="hidden" />
+    <input name="search_scope" :value="selectedItem.searchScope" type="hidden" />
     <input name="mode" value="basic" type="hidden" />
     <input name="highlight" value="true" type="hidden" />
     <input name="displayMode" value="full" type="hidden" />
@@ -54,7 +54,7 @@ export default {
   methods: {
     selectDropdown(item, itemName) {
         this.displayedItem = itemName; // swap in current item at the top of the dropdown
-        this.selectedItem = item;
+        this.selectedItem = item; // store the data from the dropdown selection
         this.placeholderString = "Enter search term here";
     },
     submitSearch() {
