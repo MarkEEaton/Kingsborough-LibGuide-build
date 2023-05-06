@@ -12,7 +12,7 @@
     <input name="dum" value="true" type="hidden" />
     <input name="displayField" value="all" type="hidden" />
     <input name="pcAvailabiltyMode" value="false" type="hidden" />
-    <input name="query" id="primoQuery" type="hidden" />
+    <input name="query" ref="primoQueryString" type="hidden" />
     <h1 id="onesearch-header">
         <a href="https://cuny-kb.primo.exlibrisgroup.com/discovery/search?tab=Everything&vid=01CUNY_KB:CUNY_KB&lang=en">
             <img class="image-fail onesearchsubmit" src="https://libapps.s3.amazonaws.com/accounts/16298/images/onesearch_logo.png" alt="OneSearch" />
@@ -40,7 +40,7 @@
         </div>
         <label class="sr-only" for="primoQueryTemp">Search terms</label>
         <div class="input-group zero-margin form-width" id="blue-border2">
-            <input class="form-control form-width inherit-height-from-flex" name="queryTemp" id="primoQueryTemp" type="search" v-model="searchString" :placeholder="placeholderString" />
+            <input class="form-control form-width inherit-height-from-flex" name="queryTemp" id="primoQueryTemp" ref="primoQueryTempString" type="search" v-model="searchString" :placeholder="placeholderString" />
         </div>
         <div class="input-group zero-margin" id="blue-border3">
             <input type="submit" class="btn btn-default form-control onesearchsubmit inherit-height-from-flex" value="Search" @click.stop.prevent="submitSearch"/>
@@ -63,8 +63,7 @@ export default {
         this.searchString = ""; // remove the search string
         this.$refs.oneSearchMenu.click(); // open the dropdown
       } else {
-        this.placeholderString = "Enter search term here";
-        document.getElementById("primoQuery").value = "any,contains," + document.getElementById("primoQueryTemp").value.replace(/[,]/g, " "); // original OLS widget
+        this.$refs.primoQueryString.value = "any,contains," + this.$refs.primoQueryTempString.value.replace(/[,]/g, " "); // vueified OLS widget code
         this.$refs.oneSearchForm.submit(); //submit the form
       }
     }
