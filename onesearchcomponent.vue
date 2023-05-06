@@ -88,7 +88,7 @@ export default {
           baseUrl: 'https://cuny-kb.primo.exlibrisgroup.com/discovery/search',
           tab: 'Everything',
           searchScope: 'IZ_CI_AW',
-          input: '<input name="mfacet" value="rtype,include,articles,1" type="hidden" /><input name="facet" value="tlevel,include,peer_reviewed" type="hidden" class="deleteWithDropdownChange" />',
+          input: '<input name="mfacet" value="rtype,include,articles,1" type="hidden" /><input name="facet" value="tlevel,include,peer_reviewed" type="hidden" />',
           id: 2
         },
         Reserves: {
