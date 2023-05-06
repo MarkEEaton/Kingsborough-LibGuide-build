@@ -19,7 +19,7 @@
         </a>
     </h1>
     <div class="form-group" id="flex-search-form">
-        <div class="dropdown input-group zero-margin" id="blue-border1">
+        <div class="dropdown input-group zero-margin" id="blue-border1" ref="blueBorder1">
             <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" ref="oneSearchMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" aria-label="Define Your Search">
                 <span id="defineYourSearch">{{ displayedItem }}&nbsp</span><span class="caret"></span>
             </button>
@@ -61,7 +61,9 @@ export default {
       if ( this.displayedItem == "Define Your Search" ) {
         this.placeholderString = "Please make a selection";
         this.searchString = ""; // remove the search string
-        this.$refs.oneSearchMenu.click(); // open the dropdown
+        if (!this.$refs.blueBorder1.classList.contains('open')) { // if the dropdown is not open
+            this.$refs.oneSearchMenu.click(); // open the dropdown
+        }
       } else {
         this.$refs.primoQueryString.value = "any,contains," + this.$refs.primoQueryTempString.value.replace(/[,]/g, " "); // vueified OLS widget code
         this.$refs.oneSearchForm.submit(); //submit the form
