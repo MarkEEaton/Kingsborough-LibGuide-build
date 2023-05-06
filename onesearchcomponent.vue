@@ -40,7 +40,7 @@
         </div>
         <label class="sr-only" for="primoQueryTemp">Search terms</label>
         <div class="input-group zero-margin form-width" id="blue-border2">
-            <input class="form-control form-width inherit-height-from-flex" name="queryTemp" id="primoQueryTemp" type="search" v-model="searchString" :placeholder="(( placeholderError == false ) ? 'Enter search term here' : 'Please make a selection')" />
+            <input class="form-control form-width inherit-height-from-flex" name="queryTemp" id="primoQueryTemp" type="search" v-model="searchString" :placeholder="placeholderString" />
         </div>
         <div class="input-group zero-margin" id="blue-border3">
             <input type="submit" class="btn btn-default form-control onesearchsubmit inherit-height-from-flex" value="Search" @click.stop.prevent="submitSearch"/>
@@ -55,14 +55,15 @@ export default {
     selectDropdown(item, itemName) {
         this.displayedItem = itemName; // swap in current item at the top of the dropdown
         this.selectedItem = item;
+        this.placeholderString = "Enter search term here";
     },
     submitSearch() {
       if ( this.displayedItem == "Define Your Search" ) {
-        this.placeholderError = true;
+        this.placeholderString = "Please make a selection";
         this.searchString = ""; // remove the search string
         this.$refs.oneSearchMenu.click(); // open the dropdown
       } else {
-        this.placeholderError = false;
+        this.placeholderString = "Enter search term here";
         document.getElementById("primoQuery").value = "any,contains," + document.getElementById("primoQueryTemp").value.replace(/[,]/g, " "); // original OLS widget
         this.$refs.oneSearchForm.submit(); //submit the form
       }
@@ -72,7 +73,7 @@ export default {
     return {
       selectedItem: {}, // initialize the data from the dropdown selection
       searchString: "", // initialize an empty search string
-      placeholderError: false, // initialize with no error text in placeholder
+      placeholderString: "Enter search term here", // initialize the placeholder
       displayedItem: "Define Your Search", // the text displayed a the top of the OneSearch dropdown
       materialType: {
         Books: {
