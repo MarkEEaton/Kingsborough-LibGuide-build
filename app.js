@@ -1,7 +1,7 @@
 import { createApp } from 'vue/dist/vue.esm-bundler.js'
-import HamburgerComponent from './hamburgercomponent.vue'
-import NavComponent from './navcomponent.vue'
-import OnesearchComponent from './onesearchcomponent.vue'
+import HamburgerComponent from './hamburger-component.vue'
+import NavComponent from './nav-component.vue'
+import OnesearchComponent from './onesearch-component.vue'
 
 const app = createApp({
     components: {
