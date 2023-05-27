@@ -65,7 +65,7 @@ a, a:hover { text-decoration: none; }
   text-align: center;
   background-color: #faf870;
   padding: 5px 50px;
-  margin: 15px;
+  margin: 0 15px;
   cursor: pointer;
 }
 #corona-alert-text {
@@ -265,13 +265,11 @@ a, a:hover { text-decoration: none; }
 }
 
 @media only screen and (min-width: 992px) {
-        #header-div { text-align: center; }
         #hamburger, #hamburger-ul { display: none; }
         #library-logo {
                max-width: 100%;
                max-height: 350px;
         }
-       .form-width { width: 340px; }
 }
 
 @media only screen and (min-width: 1200px)  {
