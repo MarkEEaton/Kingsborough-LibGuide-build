@@ -4,7 +4,7 @@ const vuePlugin = require('esbuild-plugin-vue3');
 esbuild.build({
   entryPoints: ['app.js'],
   logLevel: 'info',
-  minify: true,
+  minify: false,
   bundle: true,
   outfile: 'out.js',
   plugins: [vuePlugin()],
