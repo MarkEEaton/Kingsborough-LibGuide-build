@@ -1,36 +1,42 @@
 <template>
-  <li v-for="(navmenu, navkey) in navListOfMenus"
-      v-bind:key="navmenu.id"
-      class="dropdown main-nav-dropdown"
-  >
-    <a>
-      <a class="dropdown-toggle ga-main-navbar"
-         data-toggle="dropdown"
-         role="button"
-         aria-haspopup="true"
-         aria-expanded="false"
-      >
-        <div class="caret-text">{{ navkey }}</div>
-        <div class="fancy-caret"><i class="fas fa-angle-down" aria-hidden="true"></i></div>
-      </a>
-      <ul class="dropdown-menu fade dropdown-margin">
-        <li>
-          <a v-for="item in navmenu.data"
-             v-bind:key="item.id"
-             class="searchmenu"
-             v-bind:aria-label="item.description"
-             v-bind:href="item.link"
-             v-bind:target="item.target_blank"
-          >
-            <div class="bigger-fancy-text">
-              <i v-bind:class="item.icon" aria-hidden="true"></i>
-              <strong>{{ item.description }}</strong>
-            </div>
+  <nav class="navbar navbar-default main-nav-container">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav" id="navbar-center">
+        <li v-for="(navmenu, navkey) in navListOfMenus"
+            v-bind:key="navmenu.id"
+            class="dropdown main-nav-dropdown"
+         >
+          <a>
+            <a class="dropdown-toggle ga-main-navbar"
+               data-toggle="dropdown"
+               role="button"
+               aria-haspopup="true"
+               aria-expanded="false"
+            >
+              <div class="caret-text">{{ navkey }}</div>
+              <div class="fancy-caret"><i class="fas fa-angle-down" aria-hidden="true"></i></div>
+            </a>
+            <ul class="dropdown-menu fade dropdown-margin">
+              <li>
+                <a v-for="item in navmenu.data"
+                   v-bind:key="item.id"
+                   class="searchmenu"
+                   v-bind:aria-label="item.description"
+                   v-bind:href="item.link"
+                   v-bind:target="item.target_blank"
+                >
+                  <div class="bigger-fancy-text">
+                    <i v-bind:class="item.icon" aria-hidden="true"></i>
+                    <strong>{{ item.description }}</strong>
+                  </div>
+                </a>
+              </li>
+            </ul>
           </a>
         </li>
       </ul>
-    </a>
-  </li>
+    </div>
+  </nav>
 </template>
 
 <script>
