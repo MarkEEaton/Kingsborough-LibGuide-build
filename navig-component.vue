@@ -222,7 +222,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 /* style navbar */
 nav.navbar-default.main-nav-container {
         background-color: white;

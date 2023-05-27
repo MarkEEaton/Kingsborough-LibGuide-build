@@ -92,7 +92,7 @@
 
 <script></script>
 
-<style>
+<style scoped>
 /* style the hamburger menu */
 #hamburger-container {
   float: left;
