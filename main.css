@@ -58,19 +58,6 @@ a:hover {
   margin-left: 5px;
 }
 
-/* style alert */
-#corona-alert {
-  text-align: center;
-  background-color: #faf870;
-  padding: 5px 50px;
-  margin: 0 15px;
-  cursor: pointer;
-}
-#corona-alert-text {
-  color: var(--text);
-  font-size: 1.5em;
-}
-
 /* style background image */
 #kbcc-background-image {
   background: linear-gradient(

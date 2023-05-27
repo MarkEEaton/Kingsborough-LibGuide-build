@@ -14,6 +14,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body class="s-lib-public-body">
     <!-- Google Tag Manager (noscript) -->
     <noscript>
@@ -54,164 +55,119 @@
             />
           </div>
           <div class="row">
-            <div
-              id="corona-alert"
-              type="button"
-              data-toggle="modal"
-              data-target=".bs-example-modal-sm"
-            >
-              <span id="corona-alert-text"
-                >No fines on KBCC books checked out before the pandemic! Just
-                return them to any CUNY Library.</span
-              >
+            <alert-component></alert-component>
+          </div>
+          <div class="row" id="hamburger-alternative">
+            <div class="col-xs-12">
+              <navig-component></navig-component>
             </div>
           </div>
-          <!-- end of header div -->
-          <!-- Modal -->
-          <div
-            class="modal fade bs-example-modal-sm"
-            tabindex="-1"
-            role="dialog"
-            aria-labelledby="myModalLabel"
-          >
-            <div class="modal-dialog modal-sm" role="document">
-              <div class="modal-content" style="border-radius: 3px">
-                <div class="modal-body">
-                  <button
-                    type="button"
-                    class="close"
-                    data-dismiss="modal"
-                    aria-label="Close"
-                    style="padding: 5px 5px 12px 12px"
-                  >
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                  <h4 class="modal-title" id="myModalLabel">
-                    Before returning books to another CUNY library, please make
-                    sure you have updated your vaccine information to Cleared4
-                    or checked rules for visiting that campus.
-                  </h4>
+          <div class="row" id="kbcc-background-image">
+            <div class="col-sm-8">
+              <onesearch-component></onesearch-component>
+            </div>
+            <div class="col-sm-4">
+              <div class="nav-by-jumbotron">
+                <a class="ga-by-jumbotron">
+                  <div class="nav-divs-by-jumbotron" id="bookastudyroom">
+                    <h2><button id="eq_32886">Book A Study Room</button></h2>
+                  </div>
+                </a>
+                <a
+                  href="https://library.kbcc.cuny.edu/az.php"
+                  class="ga-by-jumbotron"
+                >
+                  <div class="nav-divs-by-jumbotron">
+                    <h2>Databases</h2>
+                  </div>
+                </a>
+                <a
+                  href="https://library.kbcc.cuny.edu/guides"
+                  class="ga-by-jumbotron"
+                >
+                  <div class="nav-divs-by-jumbotron">
+                    <h2>Research Guides</h2>
+                  </div>
+                </a>
+                <a
+                  href="https://kbcc-cuny.libwizard.com/f/feedback"
+                  class="ga-by-jumbotron"
+                >
+                  <div class="nav-divs-by-jumbotron">
+                    <h2>Send Us Feedback</h2>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-7 col-lg-6">
+                <links-component></links-component>
+                <div class="panel panel-default hide-body-border">
+                  <div class="panel-heading show-panel">
+                    <span class="panel-title content-panel-title">
+                      <h2>Today's Library Hours</h2>
+                    </span>
+                  </div>
+                  <div class="panel-body">{{content_box_29248590}}</div>
+                </div>
+              </div>
+              <div class="col-md-5 col-lg-6">
+                <div class="panel panel-default hide-body-border">
+                  <div class="panel-heading show-panel">
+                    <span class="panel-title content-panel-title">
+                      <h2>Featured in the Library</h2>
+                    </span>
+                  </div>
+                  <div class="panel-body">{{content_box_25912431}}</div>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- End of modal -->
-        </div>
-        <!-- end of row -->
-        <div class="row" id="hamburger-alternative">
-          <div class="col-xs-12">
-            <navig-component></navig-component>
-          </div>
-          <!-- end of col-xs-12 -->
-        </div>
-        <!--end of row-->
-        <div class="row" id="kbcc-background-image">
-          <div class="col-sm-8">
-            <onesearch-component></onesearch-component>
-          </div>
-          <div class="col-sm-4">
-            <div class="nav-by-jumbotron">
-              <a class="ga-by-jumbotron">
-                <div class="nav-divs-by-jumbotron" id="bookastudyroom">
-                  <h2><button id="eq_32886">Book A Study Room</button></h2>
-                </div>
-              </a>
-              <a
-                href="https://library.kbcc.cuny.edu/az.php"
-                class="ga-by-jumbotron"
-              >
-                <div class="nav-divs-by-jumbotron">
-                  <h2>Databases</h2>
-                </div>
-              </a>
-              <a
-                href="https://library.kbcc.cuny.edu/guides"
-                class="ga-by-jumbotron"
-              >
-                <div class="nav-divs-by-jumbotron">
-                  <h2>Research Guides</h2>
-                </div>
-              </a>
-              <a
-                href="https://kbcc-cuny.libwizard.com/f/feedback"
-                class="ga-by-jumbotron"
-              >
-                <div class="nav-divs-by-jumbotron">
-                  <h2>Send Us Feedback</h2>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-7 col-lg-6">
-            <links-component></links-component>
-            <div class="panel panel-default hide-body-border">
-              <div class="panel-heading show-panel">
-                <span class="panel-title content-panel-title">
-                  <h2>Today's Library Hours</h2>
-                </span>
-              </div>
-              <div class="panel-body">{{content_box_29248590}}</div>
-            </div>
-          </div>
-          <div class="col-md-5 col-lg-6">
-            <div class="panel panel-default hide-body-border">
-              <div class="panel-heading show-panel">
-                <span class="panel-title content-panel-title">
-                  <h2>Featured in the Library</h2>
-                </span>
-              </div>
-              <div class="panel-body">{{content_box_25912431}}</div>
+            <div class="row">
+              <foot-component></foot-component>
             </div>
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="row">
-          <foot-component></foot-component>
-        </div>
+
+      <div id="s-lib-alert" title="">
+        <div id="s-lib-alert-content"></div>
       </div>
-    </div>
-    <!--end of Vue app-->
+      <div id="s-lib-popover-title" class="hide">
+        <span class="text-info"><strong>title</strong></span>
+        <button
+          type="button"
+          id="popclose"
+          class="close"
+          onclick="jQuery('.s-lib-popover').popover('hide')"
+        >
+          &times;
+        </button>
+      </div>
+      <div id="s-lib-popover-content" class="hide">
+        <i class="fa fa-refresh fa-spin"></i> Loading...
+        <button class="btn btn-default btn-sm popclose" type="button">
+          Close
+        </button>
+      </div>
+      <!-- end Vue app -->
+      <div id="s-lib-scroll-top" title="Back to Top">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-square-o fa-stack-2x"></i>
+          <i
+            class="fa fa-angle-double-up fa-stack-1x"
+            style="position: relative; bottom: 2px"
+          ></i>
+        </span>
+      </div>
 
-    <div id="s-lib-alert" title="">
-      <div id="s-lib-alert-content"></div>
-    </div>
-    <div id="s-lib-popover-title" class="hide">
-      <span class="text-info"><strong>title</strong></span>
-      <button
-        type="button"
-        id="popclose"
-        class="close"
-        onclick="jQuery('.s-lib-popover').popover('hide')"
-      >
-        &times;
-      </button>
-    </div>
-    <div id="s-lib-popover-content" class="hide">
-      <i class="fa fa-refresh fa-spin"></i> Loading...
-      <button class="btn btn-default btn-sm popclose" type="button">
-        Close
-      </button>
-    </div>
-    <div id="s-lib-scroll-top" title="Back to Top">
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-square-o fa-stack-2x"></i>
-        <i
-          class="fa fa-angle-double-up fa-stack-1x"
-          style="position: relative; bottom: 2px"
-        ></i>
-      </span>
-    </div>
+      <!-- LibChat widget script -->
+      <script src="https://kbcc-cuny.libanswers.com/load_chat.php?hash=212334892d13e5887f44a2763092678b"></script>
 
-    <!-- LibChat widget script -->
-    <script src="https://kbcc-cuny.libanswers.com/load_chat.php?hash=212334892d13e5887f44a2763092678b"></script>
-
-    <!-- add Vue scripts -->
-    <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> --><!-- development -->
-    <script src="https://unpkg.com/vue/dist/vue.global.prod.js"></script>
-    <!--production -->
-    <script type="text/javascript" src="./out.js"></script>
+      <!-- add Vue scripts -->
+      <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> --><!-- development -->
+      <script src="https://unpkg.com/vue/dist/vue.global.prod.js"></script>
+      <!--production -->
+      <script type="text/javascript" src="./out.js"></script>
+    </div>
   </body>
 </html>
