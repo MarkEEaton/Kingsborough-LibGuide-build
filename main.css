@@ -104,29 +104,6 @@ a:hover {
   margin: -2px;
 }
 
-/* add flex so that blue box-shadows line up */
-#flex-search-form {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.inherit-height-from-flex {
-  height: inherit;
-}
-
-/* shadow for the search bar */
-#blue-border1 {
-  box-shadow: 0 5px 0 var(--kbccblue), 0 -5px 0 var(--kbccblue),
-    -5px -5px 0 var(--kbccblue), -5px 5px 0 var(--kbccblue);
-}
-#blue-border2 {
-  box-shadow: 0 -5px 0 var(--kbccblue), 0 5px 0 var(--kbccblue);
-}
-#blue-border3 {
-  box-shadow: 0 5px 0 var(--kbccblue), 0 -5px 0 var(--kbccblue),
-    5px -5px 0 var(--kbccblue), 5px 5px 0 var(--kbccblue);
-}
-
 /* style for nav by the jumbotron */
 .nav-divs-by-jumbotron {
   text-align: center;
@@ -348,10 +325,6 @@ a:hover {
 }
 
 @media only screen and (min-width: 992px) {
-  #hamburger,
-  #hamburger-ul {
-    display: none;
-  }
   #library-logo {
     max-width: 100%;
     max-height: 350px;

@@ -110,4 +110,11 @@
 #hamburger-ul {
   padding: 25px 0;
 }
+
+@media only screen and (min-width: 992px) {
+  #hamburger,
+  #hamburger-ul {
+    display: none;
+  }
+}
 </style>
