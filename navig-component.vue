@@ -5,7 +5,7 @@
         <li v-for="(navmenu, navkey) in navListOfMenus"
             v-bind:key="navmenu.id"
             class="dropdown main-nav-dropdown"
-         >
+        >
           <a>
             <a class="dropdown-toggle ga-main-navbar"
                data-toggle="dropdown"
@@ -223,4 +223,36 @@ export default {
 </script>
 
 <style>
+/* style navbar */
+nav.navbar-default.main-nav-container {
+        background-color: white;
+        border: none;
+        font-size: 1.4em;
+        color: var(--text);
+        border-radius: 0;
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+        background-color: #fff;
+}
+.nav > li > a:hover {
+        outline: none;
+}
+.navbar-default .navbar-nav > li > a { color: var(--text); }
+#navbar-center {
+        display: flex;
+        justify-content: left;
+        float: none;
+}
+.ga-main-navbar { 
+        font-size: 1.3em;
+}
+#dropdownMenu1 { border-radius: 0; }
+a.searchmenu {
+        color: var(--text);
+}
+.highlight-menu-item { padding: 5px; }
+.highlight-menu-item:hover {
+        cursor: pointer;
+}
+nav.navbar-default.main-nav-container { margin-top: 10px; }
 </style>
