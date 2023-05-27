@@ -14,12 +14,8 @@ a, a:hover { text-decoration: none; }
 /* style slide out chat */
 #lcs_slide_out_button-21944 { font-size: 1.5em; }
 
-/* style header */
-#header-div {
-        padding: 60px;
-}
-
 /* style the hamburger menu */
+#top-row { margin-top: 30px; }
 #hamburger-container { float: left; }
 #hamburger, #hamburger:active { 
         border: none;
@@ -69,6 +65,7 @@ a, a:hover { text-decoration: none; }
   text-align: center;
   background-color: #faf870;
   padding: 5px 50px;
+  margin: 15px;
   cursor: pointer;
 }
 #corona-alert-text {
