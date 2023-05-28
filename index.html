@@ -27,13 +27,9 @@
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!-- BEGIN: content -->
-    <div id="app">
-      <!-- vue app -->
-      <div
-        id="s-lib-public-main"
-        class="s-lib-main container s-lib-side-borders"
-      >
-        <div id="s-lg-index-cols">
+    <div id="s-lib-public-main" class="s-lib-main container s-lib-side-borders">
+      <div id="s-lg-index-cols">
+        <div id="app1">
           <div class="row" id="top-row">
             <div id="obsolete_browser_alert"></div>
             <hamburger-component></hamburger-component>
@@ -100,66 +96,40 @@
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-7 col-lg-6">
+        </div>
+        <div class="row">
+          <div class="col-md-7 col-lg-6">
+            <div id="app2">
               <links-component></links-component>
-              <div class="panel panel-default hide-body-border">
-                <div class="panel-heading show-panel">
-                  <span class="panel-title content-panel-title">
-                    <h2>Today's Library Hours</h2>
-                  </span>
-                </div>
-                <div class="panel-body">{{content_box_29248590}}</div>
-              </div>
             </div>
-            <div class="col-md-5 col-lg-6">
-              <div class="panel panel-default hide-body-border">
-                <div class="panel-heading show-panel">
-                  <span class="panel-title content-panel-title">
-                    <h2>Featured in the Library</h2>
-                  </span>
-                </div>
-                <div class="panel-body">{{content_box_25912431}}</div>
+            <!-- end of app2 -->
+            <div class="panel panel-default hide-body-border">
+              <div class="panel-heading show-panel">
+                <span class="panel-title content-panel-title">
+                  <h2>Today's Library Hours</h2>
+                </span>
               </div>
+              <div class="panel-body">{{content_box_29248590}}</div>
             </div>
           </div>
-          <div class="row">
-            <foot-component></foot-component>
+          <div class="col-md-5 col-lg-6">
+            <div class="panel panel-default hide-body-border">
+              <div class="panel-heading show-panel">
+                <span class="panel-title content-panel-title">
+                  <h2>Featured in the Library</h2>
+                </span>
+              </div>
+              <div class="panel-body">{{content_box_25912431}}</div>
+            </div>
           </div>
         </div>
+        <div class="row" id="app3">
+          <foot-component></foot-component>
+          <lg-foot-component></lg-foot-component>
+        </div>
+        <!-- end of app3 -->
       </div>
-
-      <div id="s-lib-alert" title="">
-        <div id="s-lib-alert-content"></div>
-      </div>
-      <div id="s-lib-popover-title" class="hide">
-        <span class="text-info"><strong>title</strong></span>
-        <button
-          type="button"
-          id="popclose"
-          class="close"
-          onclick="jQuery('.s-lib-popover').popover('hide')"
-        >
-          &times;
-        </button>
-      </div>
-      <div id="s-lib-popover-content" class="hide">
-        <i class="fa fa-refresh fa-spin"></i> Loading...
-        <button class="btn btn-default btn-sm popclose" type="button">
-          Close
-        </button>
-      </div>
-      <!-- end Vue app -->
-      <div id="s-lib-scroll-top" title="Back to Top">
-        <span class="fa-stack fa-lg">
-          <i class="fa fa-square-o fa-stack-2x"></i>
-          <i
-            class="fa fa-angle-double-up fa-stack-1x"
-            style="position: relative; bottom: 2px"
-          ></i>
-        </span>
-      </div>
-    </div><!-- end of app -->
+    </div>
 
     <!-- LibChat widget script -->
     <script src="https://kbcc-cuny.libanswers.com/load_chat.php?hash=212334892d13e5887f44a2763092678b"></script>
