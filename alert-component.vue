@@ -44,7 +44,6 @@
 <script></script>
 
 <style scoped>
-/* style alert */
 #corona-alert {
   text-align: center;
   background-color: #faf870;
