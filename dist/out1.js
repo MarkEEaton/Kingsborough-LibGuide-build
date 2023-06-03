@@ -14455,24 +14455,19 @@ ${codeFrame}` : message);
   var blue_divs_component_default = {
     mounted() {
       const script6 = document.createElement("script");
-      script6.src = "https://libapps.s3.amazonaws.com/sites/2365/include/equipment.min.js";
+      script6.src = "https://kbcc-cuny.libcal.com/js/equipment.min.js";
       script6.async = true;
-      script6.onload = () => {
-        console.log("LibCalEquipmentBooking library loaded.");
-      };
       document.head.appendChild(script6);
     },
     methods: {
       invokePlugin() {
-        jQuery(function() {
-          jQuery("#eq_32886, #bookastudyroom").LibCalEquipmentBooking({
-            iid: 5570,
-            gid: 32886,
-            eid: 0,
-            width: 560,
-            height: 680,
-            domain: "https://kbcc-cuny.libcal.com"
-          });
+        jQuery("#bookastudyroom").LibCalEquipmentBooking({
+          iid: 5570,
+          gid: 32886,
+          eid: 0,
+          width: 560,
+          height: 680,
+          domain: "https://kbcc-cuny.libcal.com"
         });
       }
     }
@@ -14498,11 +14493,17 @@ ${codeFrame}` : message);
   function render3(_ctx, _cache, $props, $setup, $data, $options) {
     return openBlock(), createElementBlock("div", _hoisted_12, [
       createBaseVNode("a", _hoisted_22, [
-        createBaseVNode("div", {
-          class: "nav-divs-by-jumbotron",
-          id: "bookastudyroom",
-          onClick: _cache[0] || (_cache[0] = (...args) => $options.invokePlugin && $options.invokePlugin(...args))
-        }, _hoisted_4)
+        createBaseVNode(
+          "div",
+          {
+            class: "nav-divs-by-jumbotron",
+            id: "bookastudyroom",
+            onClickCapture: _cache[0] || (_cache[0] = (...args) => $options.invokePlugin && $options.invokePlugin(...args))
+          },
+          _hoisted_4,
+          32
+          /* HYDRATE_EVENTS */
+        )
       ]),
       _hoisted_5
     ]);
