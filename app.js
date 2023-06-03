@@ -1,5 +1,6 @@
 import { createApp } from 'vue/dist/vue.esm-bundler.js';
 import AlertComponent from './alert-component.vue';
+import BlueDivsComponent from './blue-divs-component.vue';
 import FootComponent from './foot-component.vue';
 import HamburgerComponent from './hamburger-component.vue';
 import LgFootComponent from './lg-foot-component.vue';
@@ -18,6 +19,7 @@ const app1 = createApp({
 
 const app2 = createApp({
   components: {
+    'blue-divs-component': BlueDivsComponent,
     'links-component': LinksComponent,
   },
 }).mount('#app2');
