@@ -14,12 +14,12 @@ const app1 = createApp({
     'hamburger-component': HamburgerComponent,
     'navig-component': NavigComponent,
     'onesearch-component': OnesearchComponent,
+    'blue-divs-component': BlueDivsComponent,
   },
 }).mount('#app1');
 
 const app2 = createApp({
   components: {
-    'blue-divs-component': BlueDivsComponent,
     'links-component': LinksComponent,
   },
 }).mount('#app2');

@@ -1,0 +1,202 @@
+/* sfc-style:/home/ocertat/git/Kingsborough-LibGuide-build/alert-component.vue?type=style&index=0 */
+#corona-alert[data-v-322b71a3] {
+  text-align: center;
+  background-color: #faf870;
+  padding: 5px 50px;
+  margin: 0 15px;
+  cursor: pointer;
+}
+#corona-alert-text[data-v-322b71a3] {
+  color: var(--text);
+  font-size: 1.5em;
+}
+
+/* sfc-style:/home/ocertat/git/Kingsborough-LibGuide-build/blue-divs-component.vue?type=style&index=0 */
+.nav-divs-by-jumbotron[data-v-bca9cbad] {
+  text-align: center;
+  padding: 6px;
+  margin: 6px 0;
+  color: white;
+  background-color: var(--kbccblue);
+  border-radius: 3px;
+}
+.nav-divs-by-jumbotron > h2[data-v-bca9cbad] {
+  font-size: 1.5em;
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+.nav-divs-by-jumbotron[data-v-bca9cbad]:hover {
+  background-color: #444;
+}
+#eq_32886[data-v-bca9cbad] {
+  background-color: var(--kbccblue);
+  border: none;
+}
+.nav-divs-by-jumbotron:hover > h2 > #eq_32886[data-v-bca9cbad],
+#eq_32886[data-v-bca9cbad]:hover {
+  background-color: #444;
+}
+#bookastudyroom[data-v-bca9cbad] {
+  cursor: pointer;
+}
+
+/* sfc-style:/home/ocertat/git/Kingsborough-LibGuide-build/foot-component.vue?type=style&index=0 */
+#orange-line[data-v-67ee2f5c] {
+  height: 10px;
+  background-color: var(--kbccorange);
+}
+#main-blue-footer[data-v-67ee2f5c] {
+  background-color: var(--kbccblue);
+  color: white;
+  padding: 30px;
+}
+.whiteahrefs a[data-v-67ee2f5c]:link,
+.whiteahrefs a[data-v-67ee2f5c]:hover,
+.whiteahrefs a[data-v-67ee2f5c]:visited,
+.whiteahrefs a[data-v-67ee2f5c]:active {
+  color: white;
+}
+.whiteahrefs a i[data-v-67ee2f5c] {
+  margin: 4px 5px 0 0;
+  font-size: 1.5em;
+}
+.whiteahrefs[data-v-67ee2f5c] {
+  margin-top: 10px;
+}
+#lighthouse-logo > a > img[data-v-67ee2f5c] {
+  max-width: 150px;
+}
+@media only screen and (min-width: 1px) {
+  #main-blue-footer[data-v-67ee2f5c] {
+    min-height: 450px;
+  }
+  .library-address[data-v-67ee2f5c] {
+    float: left;
+  }
+  #cuny-logo[data-v-67ee2f5c] {
+    float: left;
+    clear: both;
+    margin-top: 10px;
+  }
+  .libapps[data-v-67ee2f5c] {
+    float: left;
+    clear: left;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #lighthouse-logo[data-v-67ee2f5c] {
+    display: inline-block;
+    float: left;
+  }
+  #main-blue-footer[data-v-67ee2f5c] {
+    min-height: 210px;
+  }
+  .library-address[data-v-67ee2f5c] {
+    display: inline-block;
+    margin: -10px 30px;
+    font-size: 1.1em;
+  }
+  #cuny-logo[data-v-67ee2f5c] {
+    float: right;
+    clear: none;
+    margin: -10px 0;
+  }
+  .libapps[data-v-67ee2f5c] {
+    float: right;
+    clear: both;
+  }
+}
+
+/* sfc-style:/home/ocertat/git/Kingsborough-LibGuide-build/hamburger-component.vue?type=style&index=0 */
+#hamburger-container[data-v-b66daaea] {
+  float: left;
+}
+#hamburger[data-v-b66daaea],
+#hamburger[data-v-b66daaea]:active {
+  border: none;
+  outline: none;
+  background-color: #fff;
+  color: var(--kbccblue);
+}
+#hamburger-ul > li > .searchmenu[data-v-b66daaea] {
+  background-color: #fff;
+}
+#hamburger-ul[data-v-b66daaea] {
+  padding: 25px 0;
+}
+@media only screen and (min-width: 992px) {
+  #hamburger[data-v-b66daaea],
+  #hamburger-ul[data-v-b66daaea] {
+    display: none;
+  }
+}
+
+/* sfc-style:/home/ocertat/git/Kingsborough-LibGuide-build/navig-component.vue?type=style&index=0 */
+nav.navbar-default.main-nav-container[data-v-8c4d4f79] {
+  background-color: white;
+  border: none;
+  font-size: 1.4em;
+  color: var(--text);
+  border-radius: 0;
+}
+.nav .open > a[data-v-8c4d4f79],
+.nav .open > a[data-v-8c4d4f79]:focus,
+.nav .open > a[data-v-8c4d4f79]:hover {
+  background-color: #fff;
+}
+.nav > li > a[data-v-8c4d4f79]:hover {
+  outline: none;
+}
+.navbar-default .navbar-nav > li > a[data-v-8c4d4f79] {
+  color: var(--text);
+}
+#navbar-center[data-v-8c4d4f79] {
+  display: flex;
+  justify-content: left;
+  float: none;
+}
+.ga-main-navbar[data-v-8c4d4f79] {
+  font-size: 1.3em;
+}
+#dropdownMenu1[data-v-8c4d4f79] {
+  border-radius: 0;
+}
+a.searchmenu[data-v-8c4d4f79] {
+  color: var(--text);
+}
+.highlight-menu-item[data-v-8c4d4f79] {
+  padding: 5px;
+}
+.highlight-menu-item[data-v-8c4d4f79]:hover {
+  cursor: pointer;
+}
+nav.navbar-default.main-nav-container[data-v-8c4d4f79] {
+  margin-top: 10px;
+}
+
+/* sfc-style:/home/ocertat/git/Kingsborough-LibGuide-build/onesearch-component.vue?type=style&index=0 */
+#flex-search-form[data-v-e9a7041b] {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.inherit-height-from-flex[data-v-e9a7041b] {
+  height: inherit;
+}
+#blue-border1[data-v-e9a7041b] {
+  box-shadow:
+    0 5px 0 #003466,
+    0 -5px 0 #003466,
+    -5px -5px 0 #003466,
+    -5px 5px 0 #003466;
+}
+#blue-border2[data-v-e9a7041b] {
+  box-shadow: 0 -5px 0 #003466, 0 5px 0 #003466;
+}
+#blue-border3[data-v-e9a7041b] {
+  box-shadow:
+    0 5px 0 #003466,
+    0 -5px 0 #003466,
+    5px -5px 0 #003466,
+    5px 5px 0 #003466;
+}

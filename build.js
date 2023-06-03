@@ -6,6 +6,6 @@ esbuild.build({
   logLevel: 'info',
   minify: false,
   bundle: true,
-  outfile: 'out.js',
+  outfile: './dist/out1.js',
   plugins: [vuePlugin()],
 }).catch(() => process.exit(1));
