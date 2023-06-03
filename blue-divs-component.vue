@@ -1,7 +1,7 @@
 <template>
   <div class="nav-by-jumbotron">
     <a class="ga-by-jumbotron">
-      <div class="nav-divs-by-jumbotron" id="bookastudyroom">
+      <div class="nav-divs-by-jumbotron" id="bookastudyroom" @click="invokePlugin">
         <h2><button id="eq_32886">Book A Study Room</button></h2>
       </div>
     </a>
@@ -26,7 +26,32 @@
   </div>
 </template>
 
-<script></script>
+<script>
+export default {
+  mounted() {
+    const script = document.createElement('script');
+    script.src = 'https://libapps.s3.amazonaws.com/sites/2365/include/equipment.min.js';
+    script.async = true;
+    script.onload = () => {
+      console.log('LibCalEquipmentBooking library loaded.');
+    };
+    document.head.appendChild(script);
+  },
+  methods: {
+    invokePlugin() {
+      jQuery(function() {
+        jQuery("#eq_32886, #bookastudyroom").LibCalEquipmentBooking({
+          iid: 5570,
+          gid: 32886,
+          eid: 0,
+          width: 560,
+          height: 680,
+        });
+      });
+    }
+  }
+}
+</script>
 
 <style scoped>
 /* style for nav by the jumbotron */
