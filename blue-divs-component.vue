@@ -46,6 +46,7 @@ export default {
           eid: 0,
           width: 560,
           height: 680,
+          domain: 'https://kbcc-cuny.libcal.com'
         });
       });
     }

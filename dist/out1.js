@@ -14470,7 +14470,8 @@ ${codeFrame}` : message);
             gid: 32886,
             eid: 0,
             width: 560,
-            height: 680
+            height: 680,
+            domain: "https://kbcc-cuny.libcal.com"
           });
         });
       }
