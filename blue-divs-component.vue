@@ -30,7 +30,7 @@
 export default {
   mounted() {
     const script = document.createElement('script');
-    script.src = 'https://libapps.s3.amazonaws.com/sites/2365/include/equipment.min.js';
+    script.src = 'https://kbcc-cuny.libcal.com/js/equipment.min.js';
     script.async = true;
     script.onload = () => {
       console.log('LibCalEquipmentBooking library loaded.');
