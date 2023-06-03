@@ -28,4 +28,33 @@
 
 <script></script>
 
-<style scoped></style>
+<style scoped>
+/* style for nav by the jumbotron */
+.nav-divs-by-jumbotron {
+  text-align: center;
+  padding: 6px;
+  margin: 6px 0;
+  color: white;
+  background-color: var(--kbccblue);
+  border-radius: 3px;
+}
+.nav-divs-by-jumbotron > h2 {
+  font-size: 1.5em;
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+.nav-divs-by-jumbotron:hover {
+  background-color: #444;
+}
+#eq_32886 {
+  background-color: var(--kbccblue);
+  border: none;
+}
+.nav-divs-by-jumbotron:hover > h2 > #eq_32886,
+#eq_32886:hover {
+  background-color: #444;
+}
+#bookastudyroom {
+  cursor: pointer;
+}
+</style>
