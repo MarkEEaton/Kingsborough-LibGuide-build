@@ -14375,8 +14375,8 @@ ${codeFrame}` : message);
     initDev2();
   }
 
-  // sfc-template:/home/ocertat/git/Kingsborough-LibGuide-build/alert-component.vue?type=template
-  var _withScopeId = (n) => (pushScopeId("data-v-322b71a3"), n = n(), popScopeId(), n);
+  // sfc-template:/home/ocertat/git/Kingsborough-LibGuide-build/components/alert-component.vue?type=template
+  var _withScopeId = (n) => (pushScopeId("data-v-94492280"), n = n(), popScopeId(), n);
   var _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode(
     "div",
     {
@@ -14444,14 +14444,14 @@ ${codeFrame}` : message);
     );
   }
 
-  // alert-component.vue
+  // components/alert-component.vue
   var script = {};
   script.render = render2;
-  script.__file = "alert-component.vue";
-  script.__scopeId = "data-v-322b71a3";
+  script.__file = "components/alert-component.vue";
+  script.__scopeId = "data-v-94492280";
   var alert_component_default = script;
 
-  // sfc-script:/home/ocertat/git/Kingsborough-LibGuide-build/blue-divs-component.vue?type=script
+  // sfc-script:/home/ocertat/git/Kingsborough-LibGuide-build/components/blue-divs-component.vue?type=script
   var blue_divs_component_default = {
     mounted() {
       const script6 = document.createElement("script");
@@ -14473,8 +14473,8 @@ ${codeFrame}` : message);
     }
   };
 
-  // sfc-template:/home/ocertat/git/Kingsborough-LibGuide-build/blue-divs-component.vue?type=template
-  var _withScopeId2 = (n) => (pushScopeId("data-v-bca9cbad"), n = n(), popScopeId(), n);
+  // sfc-template:/home/ocertat/git/Kingsborough-LibGuide-build/components/blue-divs-component.vue?type=template
+  var _withScopeId2 = (n) => (pushScopeId("data-v-2d7510dc"), n = n(), popScopeId(), n);
   var _hoisted_12 = { class: "nav-by-jumbotron" };
   var _hoisted_22 = { class: "ga-by-jumbotron" };
   var _hoisted_3 = /* @__PURE__ */ _withScopeId2(() => /* @__PURE__ */ createBaseVNode(
@@ -14489,7 +14489,7 @@ ${codeFrame}` : message);
   var _hoisted_4 = [
     _hoisted_3
   ];
-  var _hoisted_5 = /* @__PURE__ */ createStaticVNode('<a href="https://library.kbcc.cuny.edu/az.php" class="ga-by-jumbotron" data-v-bca9cbad><div class="nav-divs-by-jumbotron" data-v-bca9cbad><h2 data-v-bca9cbad>Databases</h2></div></a><a href="https://library.kbcc.cuny.edu/guides" class="ga-by-jumbotron" data-v-bca9cbad><div class="nav-divs-by-jumbotron" data-v-bca9cbad><h2 data-v-bca9cbad>Research Guides</h2></div></a><a href="https://kbcc-cuny.libwizard.com/f/feedback" class="ga-by-jumbotron" data-v-bca9cbad><div class="nav-divs-by-jumbotron" data-v-bca9cbad><h2 data-v-bca9cbad>Send Us Feedback</h2></div></a>', 3);
+  var _hoisted_5 = /* @__PURE__ */ createStaticVNode('<a href="https://library.kbcc.cuny.edu/az.php" class="ga-by-jumbotron" data-v-2d7510dc><div class="nav-divs-by-jumbotron" data-v-2d7510dc><h2 data-v-2d7510dc>Databases</h2></div></a><a href="https://library.kbcc.cuny.edu/guides" class="ga-by-jumbotron" data-v-2d7510dc><div class="nav-divs-by-jumbotron" data-v-2d7510dc><h2 data-v-2d7510dc>Research Guides</h2></div></a><a href="https://kbcc-cuny.libwizard.com/f/feedback" class="ga-by-jumbotron" data-v-2d7510dc><div class="nav-divs-by-jumbotron" data-v-2d7510dc><h2 data-v-2d7510dc>Send Us Feedback</h2></div></a>', 3);
   function render3(_ctx, _cache, $props, $setup, $data, $options) {
     return openBlock(), createElementBlock("div", _hoisted_12, [
       createBaseVNode("a", _hoisted_22, [
@@ -14509,31 +14509,31 @@ ${codeFrame}` : message);
     ]);
   }
 
-  // blue-divs-component.vue
+  // components/blue-divs-component.vue
   blue_divs_component_default.render = render3;
-  blue_divs_component_default.__file = "blue-divs-component.vue";
-  blue_divs_component_default.__scopeId = "data-v-bca9cbad";
+  blue_divs_component_default.__file = "components/blue-divs-component.vue";
+  blue_divs_component_default.__scopeId = "data-v-2d7510dc";
   var blue_divs_component_default2 = blue_divs_component_default;
 
-  // sfc-template:/home/ocertat/git/Kingsborough-LibGuide-build/foot-component.vue?type=template
-  var _hoisted_13 = /* @__PURE__ */ createStaticVNode('<div id="orange-line" data-v-67ee2f5c></div><div id="main-blue-footer" data-v-67ee2f5c><div id="lighthouse-logo" data-v-67ee2f5c><a href="https://www.kbcc.cuny.edu" data-v-67ee2f5c><img src="https://libapps.s3.amazonaws.com/accounts/16298/images/Orange_Vector_Mac_Building.png" alt="Kingsborough Lighthouse logo" loading="lazy" data-v-67ee2f5c></a></div><div class="library-address" data-v-67ee2f5c><div class="whiteahrefs" data-v-67ee2f5c><strong data-v-67ee2f5c>Robert J. Kibbee Library</strong><br data-v-67ee2f5c> 2001 Oriental Blvd<br data-v-67ee2f5c> Brooklyn, NY, 11209<br data-v-67ee2f5c><a href="tel:+1-718-368-5632" data-v-67ee2f5c>718-368-5632</a></div><div class="whiteahrefs" data-v-67ee2f5c><a href="https://kbcc-cuny.libwizard.com/f/reference" data-v-67ee2f5c> reference.desk@kbcc.cuny.edu </a><br data-v-67ee2f5c><a aria-label="Twitter" href="https://twitter.com/KBCCLibrary" target="_blank" data-v-67ee2f5c><i aria-hidden="true" class="fab fa-twitter" data-v-67ee2f5c></i></a><a aria-label="Instagram" href="https://www.instagram.com/kbcclibrary/" target="_blank" data-v-67ee2f5c><i aria-hidden="true" class="fab fa-instagram" data-v-67ee2f5c></i></a><a aria-label="Goodreads" href="https://www.goodreads.com/user/show/51717966-kingsborough-library" target="_blank" data-v-67ee2f5c><i aria-hidden="true" class="fab fa-goodreads" data-v-67ee2f5c></i></a><a aria-label="TikTok" href="https://www.tiktok.com/@kbcclibrary?lang=en" target="_blank" data-v-67ee2f5c><i aria-hidden="true" class="fab fa-tiktok" data-v-67ee2f5c></i></a><a aria-label="YouTube" href="https://www.youtube.com/channel/UCpeJWrnzLXEizw8cMvVp-_Q/videos" target="_blank" data-v-67ee2f5c><i aria-hidden="true" class="fab fa-youtube" data-v-67ee2f5c></i></a><a aria-label="Spotify" href="https://open.spotify.com/user/313lfmvr4ezmkb2mhodzd5ubzg4a" target="_blank" data-v-67ee2f5c><i aria-hidden="true" class="fab fa-spotify" data-v-67ee2f5c></i></a></div></div><div id="cuny-logo" data-v-67ee2f5c><a href="https://www.cuny.edu" target="_blank" data-v-67ee2f5c><img src="https://libapps.s3.amazonaws.com/accounts/16298/images/CUNYlogo-white.png" alt="CUNY logo" loading="lazy" data-v-67ee2f5c></a></div><div class="whiteahrefs libapps" data-v-67ee2f5c><a href="https://kbcc-cuny.libapps.com/libapps/login.php?site_id=2365" data-v-67ee2f5c> Log in to LibApps </a> | <a href="https://cuny-kb.alma.exlibrisgroup.com/mng/login?auth=SAML" data-v-67ee2f5c> Alma </a></div><div style="height:10px;" data-v-67ee2f5c></div></div>', 2);
+  // sfc-template:/home/ocertat/git/Kingsborough-LibGuide-build/components/foot-component.vue?type=template
+  var _hoisted_13 = /* @__PURE__ */ createStaticVNode('<div id="orange-line" data-v-6765ebce></div><div id="main-blue-footer" data-v-6765ebce><div id="lighthouse-logo" data-v-6765ebce><a href="https://www.kbcc.cuny.edu" data-v-6765ebce><img src="https://libapps.s3.amazonaws.com/accounts/16298/images/Orange_Vector_Mac_Building.png" alt="Kingsborough Lighthouse logo" loading="lazy" data-v-6765ebce></a></div><div class="library-address" data-v-6765ebce><div class="whiteahrefs" data-v-6765ebce><strong data-v-6765ebce>Robert J. Kibbee Library</strong><br data-v-6765ebce> 2001 Oriental Blvd<br data-v-6765ebce> Brooklyn, NY, 11209<br data-v-6765ebce><a href="tel:+1-718-368-5632" data-v-6765ebce>718-368-5632</a></div><div class="whiteahrefs" data-v-6765ebce><a href="https://kbcc-cuny.libwizard.com/f/reference" data-v-6765ebce> reference.desk@kbcc.cuny.edu </a><br data-v-6765ebce><a aria-label="Twitter" href="https://twitter.com/KBCCLibrary" target="_blank" data-v-6765ebce><i aria-hidden="true" class="fab fa-twitter" data-v-6765ebce></i></a><a aria-label="Instagram" href="https://www.instagram.com/kbcclibrary/" target="_blank" data-v-6765ebce><i aria-hidden="true" class="fab fa-instagram" data-v-6765ebce></i></a><a aria-label="Goodreads" href="https://www.goodreads.com/user/show/51717966-kingsborough-library" target="_blank" data-v-6765ebce><i aria-hidden="true" class="fab fa-goodreads" data-v-6765ebce></i></a><a aria-label="TikTok" href="https://www.tiktok.com/@kbcclibrary?lang=en" target="_blank" data-v-6765ebce><i aria-hidden="true" class="fab fa-tiktok" data-v-6765ebce></i></a><a aria-label="YouTube" href="https://www.youtube.com/channel/UCpeJWrnzLXEizw8cMvVp-_Q/videos" target="_blank" data-v-6765ebce><i aria-hidden="true" class="fab fa-youtube" data-v-6765ebce></i></a><a aria-label="Spotify" href="https://open.spotify.com/user/313lfmvr4ezmkb2mhodzd5ubzg4a" target="_blank" data-v-6765ebce><i aria-hidden="true" class="fab fa-spotify" data-v-6765ebce></i></a></div></div><div id="cuny-logo" data-v-6765ebce><a href="https://www.cuny.edu" target="_blank" data-v-6765ebce><img src="https://libapps.s3.amazonaws.com/accounts/16298/images/CUNYlogo-white.png" alt="CUNY logo" loading="lazy" data-v-6765ebce></a></div><div class="whiteahrefs libapps" data-v-6765ebce><a href="https://kbcc-cuny.libapps.com/libapps/login.php?site_id=2365" data-v-6765ebce> Log in to LibApps </a> | <a href="https://cuny-kb.alma.exlibrisgroup.com/mng/login?auth=SAML" data-v-6765ebce> Alma </a></div><div style="height:10px;" data-v-6765ebce></div></div>', 2);
   function render4(_ctx, _cache) {
     return _hoisted_13;
   }
 
-  // foot-component.vue
+  // components/foot-component.vue
   var script2 = {};
   script2.render = render4;
-  script2.__file = "foot-component.vue";
-  script2.__scopeId = "data-v-67ee2f5c";
+  script2.__file = "components/foot-component.vue";
+  script2.__scopeId = "data-v-6765ebce";
   var foot_component_default = script2;
 
-  // sfc-template:/home/ocertat/git/Kingsborough-LibGuide-build/hamburger-component.vue?type=template
+  // sfc-template:/home/ocertat/git/Kingsborough-LibGuide-build/components/hamburger-component.vue?type=template
   var _hoisted_14 = {
     class: "dropdown",
     id: "hamburger-container"
   };
-  var _hoisted_23 = /* @__PURE__ */ createStaticVNode('<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" id="hamburger" data-v-b66daaea><i class="fas fa-bars" style="font-size:2em;" data-v-b66daaea></i></button><ul class="dropdown-menu fade" aria-labelledby="hamburger" id="hamburger-ul" data-v-b66daaea><li data-v-b66daaea><a class="searchmenu" aria-label="OneSearch" href="https://cuny-kb.primo.exlibrisgroup.com/discovery/search?tab=Everything&amp;vid=01CUNY_KB:CUNY_KB&amp;lang=en" data-v-b66daaea><div class="highlight-menu-item bigger-fancy-text" data-v-b66daaea><i class="fas fa-search fa-fw bigger-icon" aria-hidden="true" data-v-b66daaea></i><strong data-v-b66daaea>OneSearch</strong></div></a><a class="searchmenu" aria-label="Databases A to Z" href="https://library.kbcc.cuny.edu/az.php" data-v-b66daaea><div class="highlight-menu-item bigger-fancy-text" data-v-b66daaea><i class="fas fa-database fa-fw bigger-icon" aria-hidden="true" data-v-b66daaea></i><strong data-v-b66daaea>Databases A-Z</strong></div></a><a class="searchmenu" aria-label="Research Guides" href="https://library.kbcc.cuny.edu/guides" data-v-b66daaea><div class="highlight-menu-item bigger-fancy-text" data-v-b66daaea><i class="fas fa-telescope fa-fw bigger-icon" aria-hidden="true" data-v-b66daaea></i><strong data-v-b66daaea>Research Guides</strong></div></a><a class="searchmenu" aria-label="FAQ" href="https://library.kbcc.cuny.edu/faq" data-v-b66daaea><div class="highlight-menu-item bigger-fancy-text" data-v-b66daaea><i class="fas fa-question-circle fa-fw bigger-icon" aria-hidden="true" data-v-b66daaea></i><strong data-v-b66daaea>FAQ</strong></div></a><a class="searchmenu" aria-label="Hours" href="https://library.kbcc.cuny.edu/calendar" data-v-b66daaea><div class="highlight-menu-item bigger-fancy-text" data-v-b66daaea><i class="fas fa-clock fa-fw bigger-icon" aria-hidden="true" data-v-b66daaea></i><strong data-v-b66daaea>Library Hours</strong></div></a><a class="searchmenu" aria-label="Site Map" href="https://library.kbcc.cuny.edu/sitemap" data-v-b66daaea><div class="highlight-menu-item bigger-fancy-text" data-v-b66daaea><i class="fas fa-location-arrow fa-fw bigger-icon" aria-hidden="true" data-v-b66daaea></i><strong data-v-b66daaea>Site Map</strong></div></a></li></ul>', 2);
+  var _hoisted_23 = /* @__PURE__ */ createStaticVNode('<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" id="hamburger" data-v-371bd793><i class="fas fa-bars" style="font-size:2em;" data-v-371bd793></i></button><ul class="dropdown-menu fade" aria-labelledby="hamburger" id="hamburger-ul" data-v-371bd793><li data-v-371bd793><a class="searchmenu" aria-label="OneSearch" href="https://cuny-kb.primo.exlibrisgroup.com/discovery/search?tab=Everything&amp;vid=01CUNY_KB:CUNY_KB&amp;lang=en" data-v-371bd793><div class="highlight-menu-item bigger-fancy-text" data-v-371bd793><i class="fas fa-search fa-fw bigger-icon" aria-hidden="true" data-v-371bd793></i><strong data-v-371bd793>OneSearch</strong></div></a><a class="searchmenu" aria-label="Databases A to Z" href="https://library.kbcc.cuny.edu/az.php" data-v-371bd793><div class="highlight-menu-item bigger-fancy-text" data-v-371bd793><i class="fas fa-database fa-fw bigger-icon" aria-hidden="true" data-v-371bd793></i><strong data-v-371bd793>Databases A-Z</strong></div></a><a class="searchmenu" aria-label="Research Guides" href="https://library.kbcc.cuny.edu/guides" data-v-371bd793><div class="highlight-menu-item bigger-fancy-text" data-v-371bd793><i class="fas fa-telescope fa-fw bigger-icon" aria-hidden="true" data-v-371bd793></i><strong data-v-371bd793>Research Guides</strong></div></a><a class="searchmenu" aria-label="FAQ" href="https://library.kbcc.cuny.edu/faq" data-v-371bd793><div class="highlight-menu-item bigger-fancy-text" data-v-371bd793><i class="fas fa-question-circle fa-fw bigger-icon" aria-hidden="true" data-v-371bd793></i><strong data-v-371bd793>FAQ</strong></div></a><a class="searchmenu" aria-label="Hours" href="https://library.kbcc.cuny.edu/calendar" data-v-371bd793><div class="highlight-menu-item bigger-fancy-text" data-v-371bd793><i class="fas fa-clock fa-fw bigger-icon" aria-hidden="true" data-v-371bd793></i><strong data-v-371bd793>Library Hours</strong></div></a><a class="searchmenu" aria-label="Site Map" href="https://library.kbcc.cuny.edu/sitemap" data-v-371bd793><div class="highlight-menu-item bigger-fancy-text" data-v-371bd793><i class="fas fa-location-arrow fa-fw bigger-icon" aria-hidden="true" data-v-371bd793></i><strong data-v-371bd793>Site Map</strong></div></a></li></ul>', 2);
   var _hoisted_42 = [
     _hoisted_23
   ];
@@ -14541,14 +14541,14 @@ ${codeFrame}` : message);
     return openBlock(), createElementBlock("div", _hoisted_14, _hoisted_42);
   }
 
-  // hamburger-component.vue
+  // components/hamburger-component.vue
   var script3 = {};
   script3.render = render5;
-  script3.__file = "hamburger-component.vue";
-  script3.__scopeId = "data-v-b66daaea";
+  script3.__file = "components/hamburger-component.vue";
+  script3.__scopeId = "data-v-371bd793";
   var hamburger_component_default = script3;
 
-  // sfc-template:/home/ocertat/git/Kingsborough-LibGuide-build/lg-foot-component.vue?type=template
+  // sfc-template:/home/ocertat/git/Kingsborough-LibGuide-build/components/lg-foot-component.vue?type=template
   var _hoisted_15 = /* @__PURE__ */ createBaseVNode(
     "div",
     {
@@ -14632,13 +14632,13 @@ ${codeFrame}` : message);
     );
   }
 
-  // lg-foot-component.vue
+  // components/lg-foot-component.vue
   var script4 = {};
   script4.render = render6;
-  script4.__file = "lg-foot-component.vue";
+  script4.__file = "components/lg-foot-component.vue";
   var lg_foot_component_default = script4;
 
-  // sfc-template:/home/ocertat/git/Kingsborough-LibGuide-build/links-component.vue?type=template
+  // sfc-template:/home/ocertat/git/Kingsborough-LibGuide-build/components/links-component.vue?type=template
   var _hoisted_16 = { class: "panel panel-default hide-body-border" };
   var _hoisted_25 = /* @__PURE__ */ createStaticVNode('<div class="panel-heading show-panel"><span class="panel-title content-panel-title"><h2>Library Links</h2></span></div><div class="panel-body"><div class="row"><div class="col-sm-6"><ul class="link-list"><li><a href="https://library.kbcc.cuny.edu/ENGLISH24" class="ga-library-links"> How to Use the Library </a></li><li><a href="https://library.kbcc.cuny.edu/ebooks" class="ga-library-links"> Find eTextbooks and eBooks </a></li><li><a href="https://library.kbcc.cuny.edu/video" class="ga-library-links"> Streaming Video </a></li><li><a href="https://cuny-kb.alma.exlibrisgroup.com/discovery/collectionDiscovery?vid=01CUNY_KB:CUNY_KB&amp;collectionId=8150765860006129" class="ga-library-links"> Comic Books &amp; Graphic Novels </a></li></ul></div><div class="col-sm-6"><ul class="link-list"><li><a href="http://kbcc.ezproxy.cuny.edu:2048/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;custid=s9000138&amp;profile=ehost&amp;defaultdb=a9h" target="_blank" class="ga-library-links"> Academic Search Complete </a></li><li><a href="http://kbcc.ezproxy.cuny.edu:2048/login?url=https://search.proquest.com/usmajordailies/advanced/news/fromDatabasesLayer?accountid=38336" target="_blank" class="ga-library-links"> US Newspapers </a></li><li><a href="http://www.nytimes.com/passes" target="_blank" class="ga-library-links"> NY Times Free Pass </a></li><li><a href="https://library.kbcc.cuny.edu/newarrivals/leisure" class="ga-library-links"> Leisure Reading Collection </a></li></ul></div></div></div>', 2);
   var _hoisted_44 = [
@@ -14648,13 +14648,13 @@ ${codeFrame}` : message);
     return openBlock(), createElementBlock("div", _hoisted_16, _hoisted_44);
   }
 
-  // links-component.vue
+  // components/links-component.vue
   var script5 = {};
   script5.render = render7;
-  script5.__file = "links-component.vue";
+  script5.__file = "components/links-component.vue";
   var links_component_default = script5;
 
-  // sfc-script:/home/ocertat/git/Kingsborough-LibGuide-build/navig-component.vue?type=script
+  // sfc-script:/home/ocertat/git/Kingsborough-LibGuide-build/components/navig-component.vue?type=script
   var navig_component_default = {
     data() {
       return {
@@ -14836,8 +14836,8 @@ ${codeFrame}` : message);
     }
   };
 
-  // sfc-template:/home/ocertat/git/Kingsborough-LibGuide-build/navig-component.vue?type=template
-  var _withScopeId3 = (n) => (pushScopeId("data-v-8c4d4f79"), n = n(), popScopeId(), n);
+  // sfc-template:/home/ocertat/git/Kingsborough-LibGuide-build/components/navig-component.vue?type=template
+  var _withScopeId3 = (n) => (pushScopeId("data-v-04d503c7"), n = n(), popScopeId(), n);
   var _hoisted_17 = { class: "navbar navbar-default main-nav-container" };
   var _hoisted_26 = { class: "container-fluid" };
   var _hoisted_33 = {
@@ -14940,13 +14940,13 @@ ${codeFrame}` : message);
     ]);
   }
 
-  // navig-component.vue
+  // components/navig-component.vue
   navig_component_default.render = render8;
-  navig_component_default.__file = "navig-component.vue";
-  navig_component_default.__scopeId = "data-v-8c4d4f79";
+  navig_component_default.__file = "components/navig-component.vue";
+  navig_component_default.__scopeId = "data-v-04d503c7";
   var navig_component_default2 = navig_component_default;
 
-  // sfc-script:/home/ocertat/git/Kingsborough-LibGuide-build/onesearch-component.vue?type=script
+  // sfc-script:/home/ocertat/git/Kingsborough-LibGuide-build/components/onesearch-component.vue?type=script
   var onesearch_component_default = {
     methods: {
       selectDropdown(item, itemName) {
@@ -15023,8 +15023,8 @@ ${codeFrame}` : message);
     }
   };
 
-  // sfc-template:/home/ocertat/git/Kingsborough-LibGuide-build/onesearch-component.vue?type=template
-  var _withScopeId4 = (n) => (pushScopeId("data-v-e9a7041b"), n = n(), popScopeId(), n);
+  // sfc-template:/home/ocertat/git/Kingsborough-LibGuide-build/components/onesearch-component.vue?type=template
+  var _withScopeId4 = (n) => (pushScopeId("data-v-02cf928f"), n = n(), popScopeId(), n);
   var _hoisted_18 = ["action"];
   var _hoisted_27 = ["innerHTML"];
   var _hoisted_34 = /* @__PURE__ */ _withScopeId4(() => /* @__PURE__ */ createBaseVNode(
@@ -15040,7 +15040,7 @@ ${codeFrame}` : message);
   ));
   var _hoisted_46 = ["value"];
   var _hoisted_53 = ["value"];
-  var _hoisted_62 = /* @__PURE__ */ createStaticVNode('<input name="mode" value="basic" type="hidden" data-v-e9a7041b><input name="highlight" value="true" type="hidden" data-v-e9a7041b><input name="displayMode" value="full" type="hidden" data-v-e9a7041b><input name="bulkSize" value="10" type="hidden" data-v-e9a7041b><input name="dum" value="true" type="hidden" data-v-e9a7041b><input name="displayField" value="all" type="hidden" data-v-e9a7041b><input name="pcAvailabiltyMode" value="false" type="hidden" data-v-e9a7041b>', 7);
+  var _hoisted_62 = /* @__PURE__ */ createStaticVNode('<input name="mode" value="basic" type="hidden" data-v-02cf928f><input name="highlight" value="true" type="hidden" data-v-02cf928f><input name="displayMode" value="full" type="hidden" data-v-02cf928f><input name="bulkSize" value="10" type="hidden" data-v-02cf928f><input name="dum" value="true" type="hidden" data-v-02cf928f><input name="displayField" value="all" type="hidden" data-v-02cf928f><input name="pcAvailabiltyMode" value="false" type="hidden" data-v-02cf928f>', 7);
   var _hoisted_132 = {
     name: "query",
     ref: "primoQueryString",
@@ -15241,10 +15241,10 @@ ${codeFrame}` : message);
     ], 8, _hoisted_18);
   }
 
-  // onesearch-component.vue
+  // components/onesearch-component.vue
   onesearch_component_default.render = render9;
-  onesearch_component_default.__file = "onesearch-component.vue";
-  onesearch_component_default.__scopeId = "data-v-e9a7041b";
+  onesearch_component_default.__file = "components/onesearch-component.vue";
+  onesearch_component_default.__scopeId = "data-v-02cf928f";
   var onesearch_component_default2 = onesearch_component_default;
 
   // app.js

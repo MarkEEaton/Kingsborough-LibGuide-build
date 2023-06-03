@@ -1,12 +1,12 @@
 import { createApp } from 'vue/dist/vue.esm-bundler.js';
-import AlertComponent from './alert-component.vue';
-import BlueDivsComponent from './blue-divs-component.vue';
-import FootComponent from './foot-component.vue';
-import HamburgerComponent from './hamburger-component.vue';
-import LgFootComponent from './lg-foot-component.vue';
-import LinksComponent from './links-component.vue';
-import NavigComponent from './navig-component.vue';
-import OnesearchComponent from './onesearch-component.vue';
+import AlertComponent from './components/alert-component.vue';
+import BlueDivsComponent from './components/blue-divs-component.vue';
+import FootComponent from './components/foot-component.vue';
+import HamburgerComponent from './components/hamburger-component.vue';
+import LgFootComponent from './components/lg-foot-component.vue';
+import LinksComponent from './components/links-component.vue';
+import NavigComponent from './components/navig-component.vue';
+import OnesearchComponent from './components/onesearch-component.vue';
 
 const app1 = createApp({
   components: {
